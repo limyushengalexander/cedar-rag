@@ -1,0 +1,5 @@
+question_id,keyword_top_ids,keyword_scores,embedding_top_ids,embedding_scores,required_ids,keyword_evidence_complete,embedding_evidence_complete,observation
+Q1,A1; A2,3; 2,A2; T1,0.686445793889; 0.581952837370,"A1, A2",True,False,"Keywords retrieved both A1 and A2; embeddings retrieved A2 and T1, missing the access-hours rule A1."
+Q2,A2; B1,2; 1,A2; T1,0.585193371112; 0.434760764137,A2,True,True,"Both methods retrieved A2, supporting the two-person requirement."
+Q3,T1; A2,2; 1,T1; B1,0.742027517951; 0.471195429320,T1,True,True,Both methods retrieved T1; embeddings ranked T1 first at approximately 0.742028 despite the paraphrased wording.
+Q4,A2; B1,1; 1,T1; A2,0.347721450770; 0.320827281133,absent,False,False,Wavelength information is absent from the corpus. Selected passages do not answer the question; a positive similarity score does not establish answerability.

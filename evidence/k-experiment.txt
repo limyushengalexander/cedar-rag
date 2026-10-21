@@ -1,0 +1,169 @@
+Model: sentence-transformers/all-MiniLM-L6-v2
+Device: cpu
+Python: 3.11.9
+sentence-transformers: 6.1.0
+numpy: 2.4.6
+torch: 2.14.1
+Document matrix shape: (6, 384)
+Document embeddings computed once and reused for every question and k run.
+Retrieval uses all 384 coordinates; calculations use unrounded vectors.
+
+==================== Q1 | EMBEDDING | k=1 ====================
+
+Question: May a trained graduate student operate the laser alone at 19:00?
+k: 1
+Question vector shape: (384,)
+Question first 12 coordinates: [0.0485, 0.0060, -0.0148, -0.0017, -0.0642, -0.0427, 0.0008, -0.0575, -0.0771, -0.0306, 0.0749, 0.0967]
+Question vector length: 1.000000036348
+Question length approximately 1: PASS (absolute tolerance 1e-06)
+
+All six similarities (descending score, then ascending chunk ID):
+A2 | access.txt | similarity=0.686445793889
+T1 | training.txt | similarity=0.581952837370
+B1 | booking.txt | similarity=0.532696255525
+A1 | access.txt | similarity=0.374248974962
+T2 | training.txt | similarity=0.270452173383
+B2 | booking.txt | similarity=0.128739789756
+
+Coordinate products for top passage A2:
+Coordinates are numbered from 1; no semantic labels are assigned.
+01: 0.0485 * 0.0298 = 0.001447520201
+02: 0.0060 * -0.0435 = -0.000263103280
+03: -0.0148 * -0.0289 = 0.000426193979
+04: -0.0017 * 0.0303 = -0.000050414535
+05: -0.0642 * -0.0507 = 0.003257752627
+06: -0.0427 * -0.0310 = 0.001323965607
+07: 0.0008 * 0.0361 = 0.000028042753
+08: -0.0575 * -0.0391 = 0.002250287496
+09: -0.0771 * -0.0322 = 0.002482968496
+10: -0.0306 * -0.0424 = 0.001297255799
+11: 0.0749 * 0.0498 = 0.003730078679
+12: 0.0967 * 0.0019 = 0.000180961210
+Products and totals use unrounded coordinates; displayed operands are rounded.
+First 12 products subtotal: 0.016111509030
+Remaining 372 products subtotal: 0.670334284859
+Full similarity (normalized dot product): 0.686445793889
+Direct cosine = dot / (query length * document length): 0.686445732672
+Lengths used: query=1.000000036348, document=1.000000052833
+Absolute cosine/dot difference: 6.12175879988e-08
+Cosine agrees with dot product: PASS (absolute tolerance 1e-06)
+
+Selected passages (no relevance threshold):
+
+A2 | access.txt
+The laser room requires two trained people to be present whenever the laser is operating, including during general laboratory access hours.
+
+Selected IDs and corresponding scores (rank order):
+A2 | similarity=0.686445793889
+
+==================== Q1 | EMBEDDING | k=2 ====================
+
+Question: May a trained graduate student operate the laser alone at 19:00?
+k: 2
+Question vector shape: (384,)
+Question first 12 coordinates: [0.0485, 0.0060, -0.0148, -0.0017, -0.0642, -0.0427, 0.0008, -0.0575, -0.0771, -0.0306, 0.0749, 0.0967]
+Question vector length: 1.000000036348
+Question length approximately 1: PASS (absolute tolerance 1e-06)
+
+All six similarities (descending score, then ascending chunk ID):
+A2 | access.txt | similarity=0.686445793889
+T1 | training.txt | similarity=0.581952837370
+B1 | booking.txt | similarity=0.532696255525
+A1 | access.txt | similarity=0.374248974962
+T2 | training.txt | similarity=0.270452173383
+B2 | booking.txt | similarity=0.128739789756
+
+Coordinate products for top passage A2:
+Coordinates are numbered from 1; no semantic labels are assigned.
+01: 0.0485 * 0.0298 = 0.001447520201
+02: 0.0060 * -0.0435 = -0.000263103280
+03: -0.0148 * -0.0289 = 0.000426193979
+04: -0.0017 * 0.0303 = -0.000050414535
+05: -0.0642 * -0.0507 = 0.003257752627
+06: -0.0427 * -0.0310 = 0.001323965607
+07: 0.0008 * 0.0361 = 0.000028042753
+08: -0.0575 * -0.0391 = 0.002250287496
+09: -0.0771 * -0.0322 = 0.002482968496
+10: -0.0306 * -0.0424 = 0.001297255799
+11: 0.0749 * 0.0498 = 0.003730078679
+12: 0.0967 * 0.0019 = 0.000180961210
+Products and totals use unrounded coordinates; displayed operands are rounded.
+First 12 products subtotal: 0.016111509030
+Remaining 372 products subtotal: 0.670334284859
+Full similarity (normalized dot product): 0.686445793889
+Direct cosine = dot / (query length * document length): 0.686445732672
+Lengths used: query=1.000000036348, document=1.000000052833
+Absolute cosine/dot difference: 6.12175879988e-08
+Cosine agrees with dot product: PASS (absolute tolerance 1e-06)
+
+Selected passages (no relevance threshold):
+
+A2 | access.txt
+The laser room requires two trained people to be present whenever the laser is operating, including during general laboratory access hours.
+
+T1 | training.txt
+Laser training must be renewed every 12 months. A current training record is required before operating the laser.
+
+Selected IDs and corresponding scores (rank order):
+A2 | similarity=0.686445793889
+T1 | similarity=0.581952837370
+
+==================== Q1 | EMBEDDING | k=3 ====================
+
+Question: May a trained graduate student operate the laser alone at 19:00?
+k: 3
+Question vector shape: (384,)
+Question first 12 coordinates: [0.0485, 0.0060, -0.0148, -0.0017, -0.0642, -0.0427, 0.0008, -0.0575, -0.0771, -0.0306, 0.0749, 0.0967]
+Question vector length: 1.000000036348
+Question length approximately 1: PASS (absolute tolerance 1e-06)
+
+All six similarities (descending score, then ascending chunk ID):
+A2 | access.txt | similarity=0.686445793889
+T1 | training.txt | similarity=0.581952837370
+B1 | booking.txt | similarity=0.532696255525
+A1 | access.txt | similarity=0.374248974962
+T2 | training.txt | similarity=0.270452173383
+B2 | booking.txt | similarity=0.128739789756
+
+Coordinate products for top passage A2:
+Coordinates are numbered from 1; no semantic labels are assigned.
+01: 0.0485 * 0.0298 = 0.001447520201
+02: 0.0060 * -0.0435 = -0.000263103280
+03: -0.0148 * -0.0289 = 0.000426193979
+04: -0.0017 * 0.0303 = -0.000050414535
+05: -0.0642 * -0.0507 = 0.003257752627
+06: -0.0427 * -0.0310 = 0.001323965607
+07: 0.0008 * 0.0361 = 0.000028042753
+08: -0.0575 * -0.0391 = 0.002250287496
+09: -0.0771 * -0.0322 = 0.002482968496
+10: -0.0306 * -0.0424 = 0.001297255799
+11: 0.0749 * 0.0498 = 0.003730078679
+12: 0.0967 * 0.0019 = 0.000180961210
+Products and totals use unrounded coordinates; displayed operands are rounded.
+First 12 products subtotal: 0.016111509030
+Remaining 372 products subtotal: 0.670334284859
+Full similarity (normalized dot product): 0.686445793889
+Direct cosine = dot / (query length * document length): 0.686445732672
+Lengths used: query=1.000000036348, document=1.000000052833
+Absolute cosine/dot difference: 6.12175879988e-08
+Cosine agrees with dot product: PASS (absolute tolerance 1e-06)
+
+Selected passages (no relevance threshold):
+
+A2 | access.txt
+The laser room requires two trained people to be present whenever the laser is operating, including during general laboratory access hours.
+
+T1 | training.txt
+Laser training must be renewed every 12 months. A current training record is required before operating the laser.
+
+B1 | booking.txt
+Laser room bookings are limited to two hours per session. Reserve the room through the equipment calendar.
+
+Selected IDs and corresponding scores (rank order):
+A2 | similarity=0.686445793889
+T1 | similarity=0.581952837370
+B1 | similarity=0.532696255525
+
+
+Interpretation (supplied by the user):
+For Q1, required evidence is A1 and A2. Coverage remains 1/2 at k=1, k=2 and k=3. Increasing k adds T1’s training requirements and then B1’s booking requirements, but never retrieves A1’s access-hours rule.

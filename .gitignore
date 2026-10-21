@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+
+# Downloaded model caches and weights (the current cache is inside .venv/).
+model-cache/
+models/
+models--*/
+.cache/huggingface/
+.huggingface/
+*.safetensors
+pytorch_model*.bin
+*.pt
+*.pth
+*.onnx
+tf_model.h5
+flax_model.msgpack
